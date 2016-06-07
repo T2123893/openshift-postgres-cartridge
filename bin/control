@@ -7,7 +7,7 @@ function status() {
 	ps -C postgres > /dev/null
     if [ "$?" -eq "0" ];
 	then client_result "$version is running"; 
-		client_result "  Connect to $version using:  psql -U $OPENSHIFT_GEAR_UUID -h 127.0.0.1 -p $PG_PORT template1";
+		client_result "  Connect to $version using:  psql -U $OPENSHIFT_APP_UUID -h 127.0.0.1 -p $OPENSHIFT_POSTGRESQL_DB_PORT template1";
 	else client_result "$version is not running"; 
     fi
 
@@ -45,11 +45,11 @@ function update() {
 function start() {
 
 	client_result "starting postgres...."	
-	client_result "OPENSHIFT_CRUNCHY_HOST is $OPENSHIFT_CRUNCHY_HOST"
-	client_result "OPENSHIFT_CRUNCHY_PORT is $OPENSHIFT_CRUNCHY_PORT"
-	client_result "OPENSHIFT_CRUNCHY_USER is $OPENSHIFT_CRUNCHY_USER"
-	client_result "OPENSHIFT_CRUNCHY_DATABASE is $OPENSHIFT_CRUNCHY_DATABASE"
-	client_result "psql -U $OPENSHIFT_CRUNCHY_USER -h $OPENSHIFT_CRUNCHY_HOST $OPENSHIFT_CRUNCHY_DATABASE"
+	client_result "OPENSHIFT_POSTGRESQL_DB_HOST is $OPENSHIFT_POSTGRESQL_DB_HOST"
+	client_result "OPENSHIFT_POSTGRESQL_DB_PORT is $OPENSHIFT_POSTGRESQL_DB_PORT"
+	client_result "OPENSHIFT_POSTGRESQL_DB_USERNAME is $OPENSHIFT_POSTGRESQL_DB_USERNAME"
+	client_result "OPENSHIFT_POSTGRESQL_DB_NAME is $OPENSHIFT_POSTGRESQL_DB_NAME"
+	client_result "psql -U $OPENSHIFT_POSTGRESQL_DB_USERNAME -h $OPENSHIFT_POSTGRESQL_DB_HOST $OPENSHIFT_POSTGRESQL_DB_NAME"
 
 	ps -C postgres > /dev/null
     if [ "$?" -eq "0" ];

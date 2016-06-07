@@ -1,4 +1,4 @@
-Openshift Postgres 9.3.6 Cartridge for OpenShift V2
+Openshift Postgres 9.5.3 Cartridge for OpenShift V2
 =============================
 
 The Crunchy PG Cartridge is named crunchydatasolutions-pg-1.0. The Crunchy PG Cartridge will allow you to install a single standalone PostgreSQL server or a more complex configuration of a “master” and “standby” replication configuration. The Crunchy PG Cartridge includes a version of PostgreSQL 9.3.6. 
@@ -34,7 +34,7 @@ Testing
 Various environment variables are set that allow you to connect
 to the database as follows:
 
-psql -U $OPENSHIFT_CRUNCHY_USER -h $OPENSHIFT_CRUNCHY_HOST $OPENSHIFT_CRUNCHY_DATABASE
+psql -U $OPENSHIFT_POSTGRESQL_DB_USERNAME -h $OPENSHIFT_POSTGRESQL_DB_HOST $OPENSHIFT_POSTGRESQL_DB_NAME
 
 The PostgreSQL port is 5432.  The database user is $USER which has superuser privs.
 
