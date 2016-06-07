@@ -1,7 +1,7 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/crunchypg-cart
+%global cartridgedir %{_libexecdir}/openshift/cartridges/customised-postgresql-cart
 
-Summary:       Provides Crunchy Postgres support
-Name:          openshift-postgres-cartridge
+Summary:       Customised PostgreSQL Cartridge
+Name:          customised-postgresql-cart
 Version:       1.0.6
 Release:       1%{?dist}
 Group:         Development/Languages
@@ -15,7 +15,7 @@ Requires:      bc
 Requires:      /bin/sh
 
 %description
-Provides postgres support to OpenShift. (Cartridge Format V2)
+Provides customised postgres support to OpenShift. (Cartridge Format V2)
 
 %prep
 %setup -q
