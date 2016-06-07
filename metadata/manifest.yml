@@ -5,7 +5,7 @@ Description: base postgres cartridge provided currently based on postgresql rele
 Version: "1.0"
 Website: https://github.com/T2123893
 Cartridge-Version: 1.0.0
-Cartridge-Vendor: T2123893
+Cartridge-Vendor: t2123893
 Categories:
   - service
   - database
