@@ -1,11 +1,11 @@
 Name: pg
 Cartridge-Short-Name: PG
-Display-Name: postgresql-crunchy
-Description: base postgres cartridge provided currently based on postgresql release 9.3.4
+Display-Name: openshift-postgres-cartridge
+Description: base postgres cartridge provided currently based on postgresql release 9.5.3
 Version: "1.0"
-Website: http://www.crunchydatasolutions.com
+Website: https://github.com/T2123893
 Cartridge-Version: 1.0.0
-Cartridge-Vendor: crunchydatasolutions
+Cartridge-Vendor: T2123893
 Categories:
   - service
   - database
@@ -29,4 +29,4 @@ Endpoints:
     Protocols:
      -postgresql
     
-Source-Url: https://github.com/crunchyds/openshift-postgres-cartridge.git
+Source-Url: https://github.com/T2123893/openshift-postgres-cartridge.git

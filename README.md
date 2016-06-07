@@ -1,7 +1,7 @@
 Openshift Postgres 9.5.3 Cartridge for OpenShift V2
 =============================
 
-The Crunchy PG Cartridge is named crunchydatasolutions-pg-1.0. The Crunchy PG Cartridge will allow you to install a single standalone PostgreSQL server or a more complex configuration of a “master” and “standby” replication configuration. The Crunchy PG Cartridge includes a version of PostgreSQL 9.3.6. 
+The Crunchy PG Cartridge is named openshift-postgres-cartridge, which will allow you to install a single standalone PostgreSQL server or a more complex configuration of a “master” and “standby” replication configuration. 
 
 This cartridge runs on Openshift v2, both Origin and Enterprise.
 
@@ -18,9 +18,9 @@ Installing
 To install this in Origin V2, enter the following into the downloadable
 cartridge "install your own cartridge" field:
 
-http://cartreflect-claytondev.rhcloud.com/github/crunchydata/openshift-postgres-cartridge
+http://cartreflect-claytondev.rhcloud.com/github/T2123893/openshift-postgres-cartridge
 
-This will use the reflector to add the Crunchy postgres cartridge to your
+This will use the reflector to add a customised PostgreSQL cartridge to your
 web application.
 
 Patch

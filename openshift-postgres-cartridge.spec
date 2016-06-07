@@ -1,7 +1,7 @@
 %global cartridgedir %{_libexecdir}/openshift/cartridges/customised-postgresql-cart
 
-Summary:       Customised PostgreSQL Cartridge
-Name:          customised-postgresql-cart
+Summary:       OpenShift PostgreSQL Cartridge
+Name:          openshift-postgres-cartridge
 Version:       1.0.6
 Release:       1%{?dist}
 Group:         Development/Languages
