@@ -18,7 +18,7 @@ Installing
 To install this in Origin V2, enter the following into the downloadable
 cartridge "install your own cartridge" field:
 
-http://cartreflect-claytondev.rhcloud.com/github/T2123893/openshift-postgres-cartridge
+http://cartreflect-claytondev.rhcloud.com/github/rockh/openshift-postgres-cartridge
 
 This will use the reflector to add a customised PostgreSQL cartridge to your
 web application.
